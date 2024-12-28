@@ -1,1 +1,2 @@
-# Budget-Tracker
+The Budget Tracker is a lightweight yet strong application that provides users with the means of managing their personal finances effectively. It allows one to record their income and track expenses by visualizing spending habits on charts and reports.
+The Budget Tracker was inspired by the growing need for people to take control of their personal finances in an increasingly cashless world. It's easy to lose track of spending when many people have multiple income sources and expenses.
