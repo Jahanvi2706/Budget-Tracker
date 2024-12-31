@@ -7,7 +7,30 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
+  <div id="login-section" class="container">
+    <h1>💰 Login</h1>
+    <form id="login-form">
+      <input type="text" id="login-username" placeholder="Username" required>
+      <input type="password" id="login-password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p id="login-error-message" style="color: red; display: none;">Invalid username or password.</p>
+    <button id="go-to-signup" onclick="showSignup()">Sign Up</button>
+  </div>
+
+  <div id="signup-section" class="container" style="display: none;">
+    <h1>💰 Sign Up</h1>
+    <form id="signup-form">
+      <input type="text" id="signup-username" placeholder="Username" required>
+      <input type="password" id="signup-password" placeholder="Password" required>
+      <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="signup-error-message" style="color: red; display: none;">Passwords do not match.</p>
+    <button id="go-to-login" onclick="showLogin()">Back to Login</button>
+  </div>
+
+  <div id="tracker-section" class="container" style="display: none;">
     <h1>💰 Budget Tracker</h1>
     <div id="balance">
       <h2>Your Balance</h2>
@@ -35,7 +58,10 @@
         <button type="submit">Add Transaction</button>
       </form>
     </div>
+    <button id="logout-button" onclick="logout()">Logout</button>
+    <button id="delete-all-button" onclick="deleteAllHistory()">Delete All History</button>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
